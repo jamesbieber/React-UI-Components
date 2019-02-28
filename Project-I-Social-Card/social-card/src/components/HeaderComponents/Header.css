@@ -3,6 +3,12 @@
 	display: flex;
 }
 
+.container #lambda-logo {
+	margin-top: .75%;
+	margin-right: 1%;
+	height: 5vh;
+}
+
 .header-content {
 	display: flex;
 	flex-direction: column;
