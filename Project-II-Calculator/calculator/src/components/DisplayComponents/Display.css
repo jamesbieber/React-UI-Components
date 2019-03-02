@@ -1,0 +1,17 @@
+.display {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 23.9%;
+	height: 80px;
+	background-color: #222222;
+	font-weight: bold;
+	font-size: 60px;
+	color: white;
+	text-align: center;
+	border: 1px solid #979797;
+}
+
+.display p {
+	margin-right: 8%;
+}
