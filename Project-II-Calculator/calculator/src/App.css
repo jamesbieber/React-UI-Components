@@ -1,0 +1,40 @@
+.white-button {
+	width: 6%;
+	height: 80px;
+	background-color: #FFFFFF;
+	font-weight: bold;
+	font-size: 40px;
+	color: black;
+	flex-grow: 1;
+}
+
+.action-button {
+	width: 18%;
+	height: 80px;
+	background-color: #FFFFFF;
+	font-weight: bold;
+	font-size: 40px;
+	color: black;
+}
+
+.red-button {
+	width: 6%;
+	height: 80px;
+	background-color: #A0001E;
+	font-weight: bold;
+	font-size: 40px;
+	color: #FFFFFF;
+	flex-grow: 1;
+}
+
+#calculator {
+	width: 100%;
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: wrap;
+}
+
+#red-white-buttons {
+	display: flex;
+	flex-wrap: wrap;
+}

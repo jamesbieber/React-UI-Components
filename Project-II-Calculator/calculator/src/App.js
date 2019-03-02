@@ -1,21 +1,22 @@
 import React from 'react';
 import './App.css';
+import NumberButton from './components/ButtonComponents/NumberButton';
+import ActionButton from './components/ButtonComponents/ActionButton'
+
+const actionButtons = ['clear', '0'];
+const numbers = ['3','2','1','6','5','4','9','8','7'];
+const symbols = ['÷','×','-','+','='];
 
 const App = () => {
   return (
-    <div>
-      <h3>Welcome to React Calculator</h3>
-      <p>
-        We have given you a starter project. You'll want to build out your
-        components in their respective files, remove this code and replace it
-        with the proper components.
-      </p>
-      <p>
-        <strong>
-          Don't forget to `default export` your components and import them here
-          inside of this file in order to make them work.
-        </strong>
-      </p>
+    <div id="calculator">
+      {actionButtons.map((button, index) => <ActionButton buttonStyle="action-button" text={actionButtons[index]} />)}
+
+      <div id="red-white-buttons">
+        {numbers.map((button, index) => <NumberButton buttonStyle="white-button" text={numbers[index]} />)}
+        {symbols.map((button, index) => <NumberButton buttonStyle="red-button" text={symbols[index]} />)}
+      </div>
+
     </div>
   );
 };
